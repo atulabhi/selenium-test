@@ -6,7 +6,7 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
   - pip install selenium
   - wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz
-  - tar xvf geckodriver
+  - tar -xf geckodriver*
   - chmod +x geckodriver
   - mv geckodriver /usr/local/bin
 install:
